@@ -13,3 +13,5 @@ For this project, we will be using a machine learning approach and content-based
 - The schemas folder contains schemas for Google Big Query to create the table needed to land the email data into.
 
 - The training_model folder contains the above referenced machine learning model code, spam.csv, which is the training dataset that was used to train our model, and word_index.txt which is the word index that was generated from model training.  This dictionary has to be reutilized by the model in order to ensure that the tokens are processed correctly by our saved model (spam.keras)
+
+- We used standard Google Dataflow templates to create streaming jobs that streamed the emails received in GCS to a pub/sub topic and create a subscription to stream the data in the pub/sub topic to Google Big Query.
