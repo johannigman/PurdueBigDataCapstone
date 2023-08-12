@@ -1,0 +1,10 @@
+id:STRING,
+from:STRING,
+to:STRING,
+subject:STRING,
+enc_text_body:STRING,
+enc_html_body:STRING,
+preprocessed_body:STRING,
+is_spam:INTEGER,
+folder:STRING,
+actual_spam_classification:INTEGER
